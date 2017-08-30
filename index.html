@@ -161,31 +161,7 @@
 <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 <script src="js/data.js" type="text/javascript"></script>
 <script>
-    function videoPos() {
-        var screenWidth = $(window).width();
-        var screenHeight = $(window).height();
-        var video = $("video");
-        if ((screenWidth / screenHeight) >= (16 / 9)) {
-            //video.css({width:"100%",height:"auto"});
-            video.css("top", function () {
-                return (
-                    "-" + ($(this).height() - screenHeight) / 2 + "px"
-                )
-            })
-        } else {
-            //video.css({height:"100%",width:"auto"});
-            video.css("left", function () {
-                return (
-                    "-" + ($(this).width() - screenWidth) / 2 + "px"
-                )
-            })
-        }
-    }
     $(function () {
-        videoPos();
-        $(window).resize(function () {
-            videoPos();
-        });
         $("video").on("ended", function () {
             this.load();
             this.play();
