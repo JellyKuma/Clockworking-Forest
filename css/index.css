@@ -29,6 +29,7 @@ header {
 }
 header>video{
     position: absolute;
+    opacity: 0;
     top:0;
     left:0;
     z-index: 98;
@@ -300,7 +301,7 @@ section>div>h3::after{
     width: 330px;
     height: 330px;
     top: 95px;
-    border-top: 3px solid #bcc2a2;
+    border-top: 2px solid #666666;
     padding-top: 5px;
     padding-right: 24px;
 }
@@ -331,11 +332,10 @@ section>div>h3::after{
     height: 300px;
 }
 .imgWheel>div>.subTitle1 {
-    border-top: 3px solid #bcc2a2;
-    border-left: 2px solid #bcc2a2;
+    border-top: 2px solid #666666;
     width: 500px;
     bottom: 79px;
-    right: 0;
+    right: 20px;
     padding-top: 8px;
     padding-left: 24px;
     color: #666666;
@@ -344,7 +344,7 @@ section>div>h3::after{
     width: 500px;
     bottom: 56px;
     font-size: 0.8em;
-    right: 0;
+    right: 20px;
     color: #aaaaaa;
 }
 .toTop {
